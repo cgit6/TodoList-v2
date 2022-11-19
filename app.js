@@ -45,7 +45,7 @@ mongoose
   });
 
 // homepage
-app.get("/home", (req, res) => {
+app.get("/", (req, res) => {
   // send 只能送str 不能送檔案
   res.render("Home_page.ejs");
 });
@@ -208,6 +208,5 @@ app.get("/people/map/update", (req, res) => {
 //    console.log("server running localhost 3000");
 //  });
 //
-
 
 module.exports = app;
